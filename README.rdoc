@@ -1,0 +1,33 @@
+= jQuery.Page
+
+author:: Arwid Bancewicz http://arwid.ca
+version:: 0.1
+updated:: 23 Feb 2011
+
+Overly simple jQuery plugin to run per page Javascript
+
+= Usage
+
+Give the body an attribute:
+  <body id="home">
+
+Setup the javascript:
+  $.Page.init({
+    "home" : function() {
+      // do something
+    },
+    "about" : function() {
+      // do something
+    }
+  });
+  $.Page.start();
+
+Alternatively:
+  $.Page.addHandlers({
+    "home" : function() {
+      // do something
+    }
+  });
+= License
+
+jQUery.Page is covered by the MIT License.
