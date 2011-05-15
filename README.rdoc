@@ -4,7 +4,9 @@ author:: Arwid Bancewicz http://arwid.ca
 version:: 0.1
 updated:: 23 Feb 2011
 
-Overly simple jQuery plugin to run per page Javascript
+This is an overly simple jQuery plugin to run per page Javascript. Use it to reduce server load and page load time by allowing the browser to download your js once and cache it for subsequent page requests.
+
+It becomes even more useful if you concatenate all js files (such as with Jammit) so you're loading one js across multiple pages. This plugin effectively becomes a simple and elegant js controller for routing pages and connecting them to js fragments.
 
 = Usage
 
